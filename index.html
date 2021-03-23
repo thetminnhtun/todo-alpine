@@ -77,7 +77,7 @@
 						<a
 							:class="{'selected' : filter === 'all'}"
 							href="#/"
-							@click="filter = 'all'"
+							@click.prevent="filter = 'all'"
 							>All</a
 						>
 					</li>
@@ -85,7 +85,7 @@
 						<a
 							:class="{'selected' : filter === 'active'}"
 							href="#/active"
-							@click="filter = 'active'"
+							@click.prevent="filter = 'active'"
 							>Active</a
 						>
 					</li>
@@ -93,7 +93,7 @@
 						<a
 							:class="{'selected' : filter === 'completed'}"
 							href="#/completed"
-							@click="filter = 'completed'"
+							@click.prevent="filter = 'completed'"
 							>Completed</a
 						>
 					</li>
